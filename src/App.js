@@ -1,16 +1,18 @@
 import Banner from './banner';
 import Exhibit from './exhitbit';
 import './App.css';
+import IPFetcher from './ipfech';
 
 function App() {
   return (
     <div>
       <Banner />  {/* Include the Banner at the top */}
-      <Exhibit title="First Exhibit">  {/* Use the Exhibit component */}
-        <p>This is the content for the first exhibit.</p>
+      <Exhibit title="Public IPv4 Address">  {/* Use the Exhibit component */}
+        <IPFetcher version='v4' />
       </Exhibit>
-      <Exhibit title="Second Exhibit">
-        <p>This is the content for the second exhibit.</p>
+
+      <Exhibit title="Public IPv^ Address">
+      <IPFetcher version = "v6" />
       </Exhibit>
     </div>
   );
